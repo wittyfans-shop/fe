@@ -1,0 +1,18 @@
+/*
+* @Author: wittyfans
+* @Date:   2017-08-02 20:00:32
+* @Last Modified by:   wittyfans
+* @Last Modified time: 2017-08-04 20:25:40
+*/
+
+body {
+	background: url(../../image/bg.jpg);
+
+}
+
+h1 {
+	text-align: center;
+	color : white;
+	font-size: 80px;
+
+}
