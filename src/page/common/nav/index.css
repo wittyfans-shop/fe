@@ -1,0 +1,36 @@
+/*
+* @Author: wittyfans
+* @Date:   2017-08-10 11:17:09
+* @Last Modified by:   wittyfans
+* @Last Modified time: 2017-08-10 11:29:00
+*/
+
+.nav {
+	background: #eee;
+	height: 30px;
+	line-height: 30px;
+}
+
+.nav .user{
+	float: left;
+
+}
+
+.nav .user-info .link {
+	margin-right: 5px
+}
+
+.nav .user-info .user.login {
+	display: none;
+}
+
+.nav .nav-list {
+	float: right;
+
+}
+
+.nav .nav-list .nav-item{
+	float: right;
+	display: inline-block;
+	margin-right: 5px;
+}

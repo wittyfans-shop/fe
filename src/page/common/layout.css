@@ -1,0 +1,102 @@
+/*
+* @Author: wittyfans
+* @Date:   2017-08-09 20:56:36
+* @Last Modified by:   wittyfans
+* @Last Modified time: 2017-08-09 21:58:04
+*/
+
+/*CSS Reset*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background: #f6f6f6;
+	font : 12px/1.5;
+	font-family: tahoma,arial,Microsoft YaHei,sans-serif;
+
+}
+
+li {
+	list-style: none;
+
+}
+
+img {
+	display: block;
+	border: none;
+}
+
+label {
+	cursor: pointer;
+}
+
+input[type='checkbox'] {
+	cursor: pointer;
+}
+
+/*定宽布局*/
+.w {
+	width: 1080px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+/*全局通用样式*/
+/*隐藏类*/
+.hide {
+	display: none;
+}
+
+.link {
+	color: #999;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.link:hover {
+	color: #e80012;
+}
+
+.link-text {
+	color: #999;
+	text-decoration: none;
+
+}
+
+/*通用按钮*/
+.btn {
+	display: inline-block;
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+	border: none;
+	background: #c60023;
+	font-size: 17px;
+	font-weight: bold;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+
+}
+
+.btn-mini {
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	padding: 0 10px;
+}
+
+.loading {
+	display: block;
+	background: url(../../image/icon/Spinner.gif) no-repeat;
+	width: 500px;
+	height: 500px;
+	
+}

@@ -1,0 +1,37 @@
+/*
+* @Author: wittyfans
+* @Date:   2017-08-13 22:23:51
+* @Last Modified by:   wittyfans
+* @Last Modified time: 2017-08-14 08:40:47
+*/
+
+.page-wrap{
+	padding: 30px,0;
+	margin-top: 20px;
+	text-align: center;
+	background: #fff;
+}
+
+
+.result-con .result-title{
+	color: #555;
+	margin-top: 40px;
+}
+
+
+.result-con .result-content{
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+}
+
+.result-con .result-content .link{
+	padding: 5px;
+	border: 1px solid  #ccc;
+	margin:0 5px;
+
+}
+
+.result-con {
+	display: none;
+}

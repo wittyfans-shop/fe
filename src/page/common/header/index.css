@@ -1,0 +1,40 @@
+/*
+* @Author: wittyfans
+* @Date:   2017-08-10 20:03:30
+* @Last Modified by:   wittyfans
+* @Last Modified time: 2017-08-10 22:20:41
+*/
+
+/**/
+
+.header .logo {
+	position: absolute;
+	left: 60px;
+	top: 40px;
+	display: block;
+	font-size: 36px;
+	color: #c60023;
+	font-weight: bold;
+
+}
+
+.header .search-con{
+	padding: 40px 0 30px 250px;
+}
+
+
+.header .search-con .search-input{
+	line-height: 40px;
+	padding-left: 10px;
+	font-size: 15px;
+	width: 550px;
+	height: 40px;
+	border: 2px solid #c60023;
+	outline: none;
+}
+
+.header .search-con .search-btn{
+	position: absolute;
+	height: 44px;
+	width: 80px;
+}

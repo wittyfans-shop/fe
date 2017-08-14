@@ -1,0 +1,32 @@
+/*
+* @Author: wittyfans
+* @Date:   2017-08-10 23:02:06
+* @Last Modified by:   wittyfans
+* @Last Modified time: 2017-08-13 22:20:40
+*/
+/*导航主题*/
+.nav-side {
+	float: left;
+	width: 130px;
+	min-height: 100px;
+}
+
+.nav-side .nav-item{
+	line-height: 25px;
+	font-size: 14px;
+}
+
+.nav-side .nav-item .link{
+	color: #888;
+}
+
+.nav-side .nav-item.active .link{
+	color: #c60023;
+}
+
+
+.nav-side.with-nav{
+	float: left;
+	width: 950px;
+}
+
