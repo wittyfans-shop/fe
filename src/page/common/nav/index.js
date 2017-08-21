@@ -2,7 +2,7 @@
 * @Author: wittyfans
 * @Date:   2017-08-10 11:17:22
 * @Last Modified by:   wittyfans
-* @Last Modified time: 2017-08-10 15:41:55
+* @Last Modified time: 2017-08-21 09:47:37
 */
 
 'use strict';
@@ -26,7 +26,7 @@ var nav = {
 		})
 		//注册事件
 		$('.js-register').click(function () {
-			window.location.href = './register.html'
+			window.location.href = './user-register.html'
 		})
 		//退出点击事件
 		$('.js-logout').click(function () {
@@ -44,7 +44,7 @@ var nav = {
 		User.checkLogin(
 			function(res){
 			$('.user.not-login').hide().siblings('.user.login').show()
-				.find('username').text(res.name)
+				.find('.username').text(res.username)
 		},function(errMsg){
 			//do nothing
 		}

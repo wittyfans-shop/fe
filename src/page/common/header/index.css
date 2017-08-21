@@ -2,7 +2,7 @@
 * @Author: wittyfans
 * @Date:   2017-08-10 20:03:30
 * @Last Modified by:   wittyfans
-* @Last Modified time: 2017-08-10 22:20:41
+* @Last Modified time: 2017-08-19 17:21:32
 */
 
 /**/
@@ -15,6 +15,7 @@
 	font-size: 36px;
 	color: #c60023;
 	font-weight: bold;
+	text-decoration: none;
 
 }
 
@@ -37,4 +38,15 @@
 	position: absolute;
 	height: 44px;
 	width: 80px;
+}
+
+/*面包屑导航*/
+.crumb {
+	height: 50px;
+	line-height: 50px;
+	background: #eee;
+	color: #888;
+	font-size: 14px;
+	margin-bottom: 15px;
+	border-top: 2px solid #c60023;
 }

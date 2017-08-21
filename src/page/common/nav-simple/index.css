@@ -2,7 +2,7 @@
 * @Author: wittyfans
 * @Date:   2017-08-10 10:52:30
 * @Last Modified by:   wittyfans
-* @Last Modified time: 2017-08-10 11:00:17
+* @Last Modified time: 2017-08-19 17:21:45
 */
 
 .nav-simple {
@@ -16,4 +16,5 @@
 	font-size: 26px;
 	font-weight: bold;
 	color: #c60023;
+	text-decoration: none;
 }

@@ -2,7 +2,7 @@
 * @Author: wittyfans
 * @Date:   2017-08-07 14:06:52
 * @Last Modified by:   wittyfans
-* @Last Modified time: 2017-08-10 12:06:57
+* @Last Modified time: 2017-08-21 09:40:06
 */
 
 'use strict';
@@ -44,9 +44,8 @@ var _ws = {
 	},
 
 	doLogin	: function () {
-		window.location.href = './login.html?redirect='+ encodeURIComponent(window.location.href)
+		window.location.href = './user-login.html?redirect='+ encodeURIComponent(window.location.href)
 		//？redirect=指定登陆后回来的地址，window.location.href是当前的地址，需要打包处理一些格式才不会出错
-		console.log('dologin')
 	},
 
 	//获取服务器地址

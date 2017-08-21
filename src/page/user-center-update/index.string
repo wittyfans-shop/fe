@@ -1,0 +1,20 @@
+
+    <div class="form-line">
+        <span class="label">手机:</span>
+        <input class="input" id="phone" autocomplete="off" value="{{phone}}">
+    </div>
+    <div class="form-line">
+        <span class="label">邮箱:</span>
+        <input class="input" id="email" autocomplete="off" value="{{email}}">
+    </div>
+    <div class="form-line">
+        <span class="label">密码提示问题:</span>
+        <input class="input" id="question" autocomplete="off" value="{{question}}">
+    </div>
+    <div class="form-line">
+        <span class="label">答案:</span>
+        <input class="input" id="answer" autocomplete="off" value="{{answer}}">
+    </div>
+    <!-- 编辑按钮 -->
+     <span class="btn btn-submit" >提交</span>
+ 

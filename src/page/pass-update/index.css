@@ -1,0 +1,20 @@
+/*
+* @Author: wittyfans
+* @Date:   2017-08-21 00:21:15
+* @Last Modified by:   wittyfans
+* @Last Modified time: 2017-08-21 00:25:26
+*/
+
+
+.form-line{
+	height: 30px;
+	line-height: 30px;
+}
+
+.form-line .input{
+	height: 25px;
+	width: 200px;
+	margin-bottom: 10px;
+	line-height: 25px
+}
+
