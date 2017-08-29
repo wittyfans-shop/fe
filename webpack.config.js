@@ -2,7 +2,7 @@
  * @Author: wittyfans
  * @Date:   2017-08-02 14:26:01
  * @Last Modified by:   wittyfans
- * @Last Modified time: 2017-08-21 00:22:44
+ * @Last Modified time: 2017-08-29 00:06:25
  */
 
 var webpack = require('webpack');
@@ -31,6 +31,8 @@ var config = {
     entry: {
         'common': ['./src/page/common/index.js'],
         'index': ['./src/page/index/index.js'],
+        'list': ['./src/page/list/index.js'],
+        'detail': ['./src/page/detail/index.js'],
         'user-login': ['./src/page/user-login/index.js'],
         'user-register': ['./src/page/user-register/index.js'],
         'result': ['./src/page/result/index.js'],
@@ -43,7 +45,7 @@ var config = {
     output: {
         path: './dist',
         publicPath: '/dist',
-        filename: 'js/[name].js'
+        filename: 'js/[name].js'//[name].js会让入口的js文件全部按照原来的文件名打包到js文件夹下
     },
 
     externals: {
@@ -69,18 +71,28 @@ var config = {
             node_modules: __dirname + '/node_modules'
         }
     },
+    /*
+    提取公共模块的插件，将公共的模块保存到base.js,比如a.js 和 b.js同时引用了c.js，
+    那么c.js会被打包到指定的文件中去
+    */
 
+    /*
+    但如果，有些文件需要你在每个地方都引入呢？也就是说，所有的js文件中都要require，怎么办？
+    解决方案：
+        在entry中定义一个入口，同时把这个需要全局引入的文件，打包到上面的c.js文件中去，
+    */
     plugins: [
-        //独立通用模块打包到js/base.js模块
         new webpack.optimize.CommonsChunkPlugin({
             name: 'common',
             filename: 'js/base.js'
         }),
         //CSS单独打包
         new ExtractTextPlugin("css/[name].css"),
-        //HTML模版处理
+        //HTML模版处理、getHtmlConfit函数将部分逻辑抽离了出来
         new HtmlWebpackPlugin(getHtmlConfig('index', '首页')),
         new HtmlWebpackPlugin(getHtmlConfig('user-login', '登录')),
+        new HtmlWebpackPlugin(getHtmlConfig('list', '商品列表页')),
+        new HtmlWebpackPlugin(getHtmlConfig('detail', '商品详情页')),
         new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
         new HtmlWebpackPlugin(getHtmlConfig('user-register', '用户注册')),
         new HtmlWebpackPlugin(getHtmlConfig('pass-reset', '找回密码')),

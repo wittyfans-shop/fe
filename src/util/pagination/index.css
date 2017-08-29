@@ -1,0 +1,44 @@
+/*
+* @Author: wittyfans
+* @Date:   2017-08-27 17:50:27
+* @Last Modified by:   wittyfans
+* @Last Modified time: 2017-08-28 23:46:24
+*/
+
+.pg-con{
+	text-align: center;
+	color: #333;
+}
+
+.pg-con .pg-item{
+	display: inline-block;
+	border:1px solid #ccc;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 15px;
+	margin: 0 2px;
+	background: #eee;
+	cursor: pointer;
+	user-select : none;
+	-ms-user-select : none;
+	-moz-user-select : none;
+	-webkit-user-select : none;
+}
+
+.pg-con .pg-item.disabled{
+	color: #ccc;
+	background: none;
+	cursor: auto;
+}
+
+.pg-con .pg-item.active{
+	border: 1px solid #f6f6f6;
+	background: none;
+}
+
+.pg-con .pg-total{
+	margin-left: 10px;
+	background: none;
+	cursor: auto;
+}
+

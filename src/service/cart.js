@@ -2,7 +2,7 @@
 * @Author: wittyfans
 * @Date:   2017-08-10 14:45:40
 * @Last Modified by:   wittyfans
-* @Last Modified time: 2017-08-10 15:37:09
+* @Last Modified time: 2017-08-29 14:37:04
 */
 
 
@@ -15,6 +15,15 @@ var cart = {
 		ws.request({
 			url : ws.getServerUrl('./cart.do'),
 			method : 'POST'
+		})
+	},
+	// 添加到购物车
+	addToCart : function (productInfo,resolve,reject) {
+		ws.request({
+			url : ws.getServerUrl('/cart/add.do'),
+			data : productInfo,
+			success : resolve,
+			error : reject,
 		})
 	}
 }

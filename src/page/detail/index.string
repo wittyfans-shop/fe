@@ -1,0 +1,49 @@
+<div class="intro-wrape">
+    <div class="p-img-con">
+        <!-- 主图 -->
+        <div class="main-img-con">
+            <img class="main-img" src="{{imageHost}}{{mainImage}}" alt="{{name}}">
+        </div>
+        <!-- 图片列表 -->
+        <ul class="p-img-list">
+        <!-- 循环取subImages中的值 -->
+        <!-- subImages不是key：value的值，所以每次循环要取当前的值,使用.来引用当前值 -->
+            {{#subImages}}
+                <li class="p-img-item">                  
+                    <img class="p-img" src="{{imageHost}}{{.}}" alt="{{name}}">
+                </li>
+            {{/subImages}}
+        </ul>
+    </div>
+    <div class="p-info-con">
+        <h1 class="p-name">{{name}}</h1>
+        <p class="p-subtitle">{{subtitle}}</p>
+        <div class="p-info-item price">
+            <span class="label">价格:</span>
+            <span class="info-item price-info">¥ {{price}}</span>
+        </div>
+        <div class="p-info-item">
+            <span class="label">库存:</span>
+            <span class="info-item">{{stock}}</span>
+        </div>
+        <div class="p-info-item count-item">
+            <span class="label">数量:</span>
+            <input class="p-count" readonly="" value="1" />
+            <span class="p-count-btn plus">+</span>
+            <span class="p-count-btn minus">-</span>
+        </div>
+        <div class="p-info-item">
+            <a class="btn cart-add">加入购物车</a>
+        </div>
+    </div>
+</div>
+<div class="detail-wrape">
+    <div class="detail-tab-con">
+        <ul class="tab-list">
+            <li class="tab-item active">详细描述</li>
+        </ul>
+    </div>
+    <div class="detail-con">
+        {{{detail}}}
+    </div>
+</div>

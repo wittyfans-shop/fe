@@ -1,0 +1,122 @@
+/*
+* @Author: wittyfans
+* @Date:   2017-08-26 22:09:46
+* @Last Modified by:   wittyfans
+* @Last Modified time: 2017-08-29 10:53:15
+*/
+
+.form-line{
+	height: 30px;
+	line-height: 30px;
+}
+
+.form-line .input{
+	height: 25px;
+	width: 200px;
+	margin-bottom: 10px;
+	line-height: 25px
+}
+
+/*排序按钮*/
+.sort-con{
+	overflow: hidden;
+}
+
+.sort-item{
+	float: left;
+	display: inline;
+	position: relative;
+	padding: 0 8px;
+	height: 24px;
+	line-height: 24px;
+	border:1px solid #ccc;
+	margin-right: -1px;
+	background: #fff;
+	color: #333;
+	cursor: pointer;
+}
+
+.sort-item.active{
+	background: #c60023;
+	border :1px solid #c60023 ;
+	color: #fff;
+}
+
+.sort-item.active .fa-sort-desc{
+	position: absolute;
+	top: 6px;
+    right: 8px;
+}
+
+.sort-item.active.asc .fa-sort-desc{
+	opacity: 0.6;
+}
+
+.sort-item.active.desc .fa-sort-asc{
+	opacity: 0.6;
+}
+
+/*商品列表页*/
+.p-list-con{
+	margin-top: 15px;
+	margin-right: -20px;
+	overflow: hidden;
+}
+
+.p-list-con .p-item{
+	position: relative;
+	width: 180px;
+	padding: 10px;
+	margin:0 20px 20px 0;
+	float: left;
+	background: #fff;
+}
+
+.p-list-con .p-item .p-img-con{
+	position: relative;
+	width: 180px;
+	height: 200px;
+}
+
+.p-list-con .p-item .p-img-con .p-img{
+	height: 100%;
+	width: 100%;
+}
+
+.p-list-con .p-item .p-price-con{
+	height: 30px;
+	line-height: 30px;
+}
+
+.p-list-con .p-item .p-price{
+	font-size: 16px;
+	color: #e7380d;
+}
+
+.p-list-con .p-item .p-name-con{
+	height: 60px;
+	overflow: hidden;
+}
+
+.p-list-con .p-item .p-name-con .p-name{
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 10px;
+	color: #666;
+	text-decoration: none;
+}
+
+
+/*err tips*/
+.err-tips{
+	padding: 0 10px;
+	height: 40px;
+	line-height: 40px;
+	color: #f60;
+	background: #eee;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+

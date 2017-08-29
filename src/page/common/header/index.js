@@ -2,7 +2,7 @@
  * @Author: wittyfans
  * @Date:   2017-08-10 20:03:22
  * @Last Modified by:   wittyfans
- * @Last Modified time: 2017-08-10 22:10:58
+ * @Last Modified time: 2017-08-26 22:26:08
  */
 
 'use strict';
@@ -18,6 +18,7 @@ var Cart = require('service/cart.js')
 var header = {
     init: function() {
         this.bindEvent()
+        this.onLoad()
     },
     searchSubmit: function() {
         var keyword = $.trim($('#search-input').val())

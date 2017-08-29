@@ -1,0 +1,17 @@
+/*
+* @Author: wittyfans
+* @Date:   2017-08-26 20:49:19
+* @Last Modified by:   wittyfans
+* @Last Modified time: 2017-08-26 20:50:41
+*/
+.banner {
+	 position: relative; overflow: auto; 
+}
+
+.banner li { 
+	list-style: none; 
+}
+
+.banner ul li { 
+	float: left; 
+}

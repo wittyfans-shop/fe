@@ -2,7 +2,7 @@
 * @Author: wittyfans
 * @Date:   2017-08-17 14:40:28
 * @Last Modified by:   wittyfans
-* @Last Modified time: 2017-08-19 16:51:47
+* @Last Modified time: 2017-08-28 21:59:43
 */
 
 
@@ -123,7 +123,6 @@ var page = {
 
         // 修改密码界面的点击事件，提交新密码，密码修改成功
         $('#submit-password').click(function(){
-        	console.log('new pwd seted')
         })
 
         // 键盘事件

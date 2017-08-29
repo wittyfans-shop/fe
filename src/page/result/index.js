@@ -2,7 +2,7 @@
 * @Author: wittyfans
 * @Date:   2017-08-13 22:34:23
 * @Last Modified by:   wittyfans
-* @Last Modified time: 2017-08-17 11:07:52
+* @Last Modified time: 2017-08-29 14:51:46
 */
 
 'use strict';
@@ -15,5 +15,4 @@ $(function (){
 	var type = ws.getUrlParam('type') || 'default'
 	var	$element = $('.'+type+'-success')
 	$element.show()
-	console.log('result')
 })
