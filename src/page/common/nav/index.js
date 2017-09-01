@@ -2,7 +2,7 @@
 * @Author: wittyfans
 * @Date:   2017-08-10 11:17:22
 * @Last Modified by:   wittyfans
-* @Last Modified time: 2017-08-21 09:47:37
+* @Last Modified time: 2017-09-01 16:34:49
 */
 
 'use strict';
@@ -53,10 +53,11 @@ var nav = {
 
 	loadCartCount : function () {
 		Cart.checkCartCount(
-			function(res){
+			function(res){			
 			$('.nav .cart-count').text(res||0)
 		},function(errMsg){
 			$('.nav .cart-count').text(0)
+			ws.errorTips(errMsg)
 		}
 		)
 	}

@@ -2,7 +2,7 @@
 * @Author: wittyfans
 * @Date:   2017-08-26 22:09:38
 * @Last Modified by:   wittyfans
-* @Last Modified time: 2017-08-28 23:58:01
+* @Last Modified time: 2017-08-31 17:15:53
 */
 
 // list 页面
@@ -78,7 +78,7 @@ var page = {
         $plistCon.html('<div class="loading"></div>')
 
         listParam.categoryId ? (delete listParam.keyword) : (delete listParam.categoryId)
-        console.log(listParam.categoryId)
+        
     // 请求数据
         product.getProductList(listParam,function(res){
             
